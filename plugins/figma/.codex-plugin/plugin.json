@@ -1,7 +1,7 @@
 {
   "name": "figma",
   "version": "0.1.0",
-  "description": "Figma workflows powered by Playbot-native auth and MCP.",
+  "description": "Figma read workflows powered by Playbot-native auth and MCP.",
   "author": {
     "name": "Playbot",
     "email": "support@play.bot",
@@ -21,22 +21,21 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Figma",
-    "shortDescription": "Use Figma through Playbot-native auth.",
-    "longDescription": "Inspect Figma designs, prepare design-to-code work, and update Figma files through Playbot's Figma MCP server without ChatGPT or OpenAI connector setup.",
+    "shortDescription": "Inspect Figma through Playbot-native auth.",
+    "longDescription": "Inspect Figma designs and prepare design-to-code work through Playbot's Figma MCP server without ChatGPT or OpenAI connector setup.",
     "developerName": "Playbot",
     "category": "Design",
     "capabilities": [
       "Interactive",
-      "Read",
-      "Write"
+      "Read"
     ],
     "websiteURL": "https://www.figma.com",
     "privacyPolicyURL": "https://play.bot/privacy",
     "termsOfServiceURL": "https://play.bot/terms",
     "defaultPrompt": [
       "Inspect a Figma design and implement it in code",
-      "Create Code Connect templates for my components",
-      "Build or update a screen in Figma"
+      "Read specific nodes from a Figma file",
+      "Summarize a Figma file for implementation"
     ],
     "brandColor": "#1ABCFE"
   }

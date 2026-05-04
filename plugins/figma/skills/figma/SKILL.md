@@ -1,11 +1,11 @@
 ---
 name: figma
-description: Use Figma through Playbot's Figma MCP server for design inspection, design-to-code handoff, Code Connect, design-system work, and Figma file updates without OpenAI connector login.
+description: Use Figma through Playbot's Figma MCP server for design inspection and design-to-code handoff without OpenAI connector login.
 ---
 
 # Playbot Figma
 
-Use this skill when the user provides a Figma URL, asks to inspect a Figma design, implement from Figma, create or update Figma files, work with Code Connect, or generate design-system guidance from Figma.
+Use this skill when the user provides a Figma URL, asks to inspect a Figma design, implement from Figma, or generate design-system guidance from Figma.
 
 ## Workflow
 
@@ -14,7 +14,7 @@ Use this skill when the user provides a Figma URL, asks to inspect a Figma desig
 3. Do not send the user to ChatGPT or OpenAI connector setup pages.
 4. Prefer precise file keys and node IDs from the user's Figma URL.
 5. For design-to-code work, inspect the local codebase before generating implementation guidance.
-6. For write operations, explain the intended Figma change before calling a write-capable tool.
+6. Do not claim write support unless the MCP server exposes a write-capable tool.
 
 ## Auth Model
 

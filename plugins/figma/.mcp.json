@@ -4,7 +4,7 @@
       "type": "http",
       "url": "https://play.bot/api/mcp/figma",
       "oauth_resource": "https://play.bot/api",
-      "scopes": ["figma:read", "figma:write"],
+      "scopes": ["figma:read"],
       "startup_timeout_sec": 20,
       "tool_timeout_sec": 600
     }
