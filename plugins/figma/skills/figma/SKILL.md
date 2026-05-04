@@ -23,5 +23,5 @@ Figma auth is owned by Playbot. The plugin should use Playbot's MCP OAuth flow a
 ## Failure Handling
 
 - If Figma permissions are missing, ask the user to grant access to the target file or team.
-- If the Playbot Figma MCP server is unavailable, report that Playbot Figma backend support is not reachable.
+- If a Playbot MCP request fails, report the returned error directly.
 - If a requested capability is not exposed by the current MCP server, state the missing capability directly and continue with the closest available read-only workflow.
